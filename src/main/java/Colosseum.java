@@ -109,7 +109,7 @@ public class Colosseum {
         System.out.println("Select from the following Pokemon types: 1 - Electric,"
                 + " 2 - Fire, 3 - Water");
         int type = myScan.nextInt();
-        while (type != 1 || type != 2 || type != 2 + 1) {
+        while (type < 1 || type > 2 + 1) {
             System.out.println("Sorry, you must pick either 1, 2, or 3");
             type = myScan.nextInt();
         }
